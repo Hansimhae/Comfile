@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.UpdateAccount">
+
+    <EditText
+        android:id="@+id/update_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/update_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/update_email"
+        app:layout_constraintStart_toStartOf="@+id/update_email"
+        app:layout_constraintTop_toBottomOf="@+id/update_email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/update_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/update_pwd"
+        app:layout_constraintStart_toStartOf="@+id/update_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/update_pwd" />
+
+    <EditText
+        android:id="@+id/update_PhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="전화번호"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/update_name"
+        app:layout_constraintStart_toStartOf="@+id/update_name"
+        app:layout_constraintTop_toBottomOf="@+id/update_name" />
+
+    <EditText
+        android:id="@+id/update_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="주소"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/update_PhoneNum"
+        app:layout_constraintStart_toStartOf="@+id/update_PhoneNum"
+        app:layout_constraintTop_toBottomOf="@+id/update_PhoneNum" />
+
+    <Button
+        android:id="@+id/btn_updateAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="수정"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/update_Address"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/update_Address"
+        app:layout_constraintTop_toBottomOf="@+id/update_Address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prouct Name"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:id="@+id/pName"/>
+    <TextView
+        android:layout_below="@id/pName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prouct Price"
+        android:textColor="@color/black"
+        android:id="@+id/pPrice"/>
+</RelativeLayout>
